@@ -1,6 +1,9 @@
 {
   "name": "vitadroid",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
-  "pro_id": "c202b512"
+  "pro_id": "c202b512",
+  "id": "c202b512"
 }

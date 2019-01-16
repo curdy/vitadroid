@@ -1,14 +1,66 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+    <section id="demo">
+        <div class="vertical-align">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
+                        <div class="card no-border">
+                            <div id="chat" class="conv-form-wrapper">
+                                <form action="" method="GET" class="hidden">
+                                    <select data-conv-question="Welcome, would you like to continue?" name="first-question">
+                                        <option value="yes">Yes</option>
+                                        <option value="sure">Sure!</option>
+                                    </select>
+                                    <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+                                    <input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you." data-no-answer="true">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+                                    <select name="programmer" data-callback="storeState" data-conv-question="would yu like to set up your profile picture?">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+
+                                    <!--
+                                    <select name="multi[]" data-conv-question="What kind of music do you like?" multiple>
+                                        <option value="Rock">Hip Hop</option>
+                                        <option value="Pop">Pop</option>
+                                        <option value="Country">RnB</option>
+                                        <option value="Classic">Classic</option>
+                                    </select>
+                                    <select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer?">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <div data-conv-fork="programmer">
+                                        <div data-conv-case="yes">
+                                            <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                                        </div>
+                                        <div data-conv-case="no">
+                                          <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No..</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <input data-conv-question="Want to login/Create a account? Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+                                    <input data-conv-question="Now type in your password" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
+                    <select data-conv-question="wanna search something? Try these">
+                        <option value="google" data-callback="google">Google</option>
+                        <option value="bing" data-callback="bing">Bing</option>
+                    </select>
+                                    <select name="callbackTest" data-conv-question="Want to want go back to the 'programmer' question before?">
+                                        <option value="yes" data-callback="rollback">Yes</option>
+                                        <option value="no" data-callback="restore">No</option>
+                                    </select> -->
+                                    <select data-conv-question="This is it! Thank you for talking to me." id="">
+                                        <option value="">Awesome!</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </ion-content>
